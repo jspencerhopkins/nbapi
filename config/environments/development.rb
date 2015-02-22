@@ -38,4 +38,6 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  SPORTS_DATA_API_KEY = 't77q2778c25zbuu2zjsd6425'
 end
