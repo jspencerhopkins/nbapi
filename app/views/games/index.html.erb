@@ -6,6 +6,7 @@
     	<th>Date</th>
       <th>Home Team</th>
       <th>Away Team</th>
+      <th>More Details</th>
     </tr>
   </thead>
 
@@ -16,6 +17,7 @@
 	      <td><%= game.date.strftime("%b %d, %Y") %></td>
 	      <td><%= game.home_city + ' ' + game.home_team %></td>
 	      <td><%= game.away_city + ' ' + game.away_team%></td>
+	      <td><%= link_to "View Details", game_path(game.id)%></td>
 	    	<% end %>
 	    </tr>
 

@@ -1,0 +1,23 @@
+<h1><%= @game.home_team + ' vs. ' + @game.away_team %></h1> 
+
+<p>
+	<strong>Date:</strong>
+	<%= @game.date.strftime("%b %d, %Y") %>
+</p>
+
+<p>
+	<strong>Home:</strong>
+	<%= @game.home_city + ' ' + @game.home_team %>
+</p>
+
+<p>
+	<strong>Away</strong>
+	<%= @game.away_city + ' ' + @game.away_team %>
+<p>
+
+<br>
+<hr>
+
+<p>
+	<%= link_to "Back to Game List", root_path %>
+</p>
