@@ -43,3 +43,7 @@ group :development, :test do
   gem 'spring'
 end
 
+gem 'sports_data_api', git: 'https://github.com/TheIronYard--Orlando/sports_data_api.git'
+
+gem 'will_paginate'
+
