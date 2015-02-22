@@ -11,18 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150222003820) do
+ActiveRecord::Schema.define(version: 20150222183601) do
 
   create_table "games", force: :cascade do |t|
     t.string   "home_team"
     t.string   "away_team"
     t.integer  "home_score"
     t.integer  "away_score"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
     t.datetime "date"
     t.string   "home_city"
     t.string   "away_city"
+    t.string   "api_game_id"
   end
 
   create_table "predictions", force: :cascade do |t|
@@ -37,9 +38,9 @@ ActiveRecord::Schema.define(version: 20150222003820) do
   create_table "teams", force: :cascade do |t|
     t.string   "market"
     t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string   "api_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.string   "api_team_id"
   end
 
   create_table "users", force: :cascade do |t|
